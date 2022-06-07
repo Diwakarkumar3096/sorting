@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+		System.out.println("Please Enter your card or press 1");
+		int n=scan.nextInt();
+		if(n==1){
+    		System.out.println("Please Enter your Pin");
+    		int l=scan.nextInt();
+    		if(l==123456){
+		    System.out.println("Please Enter the Amount");
+		    int l1=scan.nextInt();
+		    if(l1>=100 && l1<=10000){
+		        System.out.println("please wait while your transaction is compleated");
+		        }
+		    else if(l1>10000){
+		        System.out.println("You exceed your limit");    
+		   }
+		    else
+		    System.out.println("Please Enter the multiple of 100");
+		    }
+		    else
+		    System.out.println("You entered Wrong Pin");
+		}
+		else
+		System.out.println("You enter WRONG INPUT");
+		
+		
+		
+	}
+}
